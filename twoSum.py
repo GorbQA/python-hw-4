@@ -11,8 +11,8 @@ def twoSum(nums, target):
                 index.append(i)
                 index.append(j)
     return(index)
+nums_inp=[2, 7, 11, 15]
+sum_inp=9
 try:
-    nums_inp=list(map(int, input("Enter numbers separated by commas/ ").split(',')))
-    sum_inp=int(input("Enter sum "))
     print('Array index of terms',twoSum(nums_inp,sum_inp))
 except ValueError:print('Type only numbers')
